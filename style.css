@@ -28,17 +28,14 @@ h1 {
     color: #fff;
 }
 
-.socials a {
-    position: relative;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    background-color: #bbbbbb;
-    border-radius: 50%;
-    color: #ffffff;
-    left: 600px;
-    top: 130px;
+
+@media screen and (min-width: 480px) {
+    img {
+        width: 85%;
+    }
+
+    h1 {
+        position: relative;
+        top: 150px;
+    }
 }
