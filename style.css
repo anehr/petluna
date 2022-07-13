@@ -70,7 +70,7 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 1.6rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -134,8 +134,12 @@ body {
 }
 
 .hero {
-    margin-left: 110px;
-    margin-top: 30px;
+    display: inline-block;
+    width: 60%;
+    height: auto;
+    vertical-align: top;
+    float:right;
+    margin-right:5%;
 }
 
 .hero h1 {
@@ -152,12 +156,15 @@ body {
     width: 450px;
 }
 
+.hero-image {
+    display: inline-block;
+    width: 30%;
+    line-height: 18px;
+    float: right;
+}
+
 .hero-image img {
-    max-width: 100%;
-    margin-left: 160px;
-    margin-top: 50px;
-    border-radius: 10px;
-    height: 300px;
+    width: 75%;
 }
 
 .btn-contact {
@@ -180,6 +187,34 @@ body {
 .btn-contact a:hover {
     color: #32c3bc;
 }
+
+
+@media (max-width: 400px) {
+    .hero {
+        display: inline-block;
+        width: 60%;
+        height: auto;
+        vertical-align: top;
+        position: relative;
+        top: 230px;
+    }
+   
+    .hero-image {
+        display: block;
+        height: auto;  
+        margin: 0;
+    }
+
+    .hero-image img {
+        width: 300px;
+        height: auto;
+        position: relative;
+        left: -200px;
+        top: 30px;
+    }
+   
+}
+
 /*-------Gallery-------*/
 
 .gallery h2 {
@@ -209,6 +244,13 @@ body {
     z-index: 2;
 }
 
+@media (max-width: 400px) {
+    .gallery {
+    position: relative;
+    top: 220px;
+    }
+}
+
 /*--------Feedback--------*/
 
 .feedback h2 {
@@ -220,8 +262,9 @@ body {
 
 .feedback-images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 30px;
+    gap: 30px;
 }
 
 .feedback-images img {
@@ -324,3 +367,9 @@ footer {
     width: 280px;
     height: 280px;
  }
+
+ @media (max-width:500px) {
+    .footer {
+        margin-top: 30px;
+    }
+    }
