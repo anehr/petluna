@@ -224,7 +224,20 @@ body {
     }
 
     .hero p {
-        font-size: .75rem;
+        font-size: 1rem;
+        position: relative;
+        top: -30px;
+    }
+
+    .hero hr {
+        display: none;
+    }
+
+    .btn-contact {
+        margin-left: 50px;
+        position: relative;
+        top: -33px;
+        font-size: 15px;
     }
    
 }
@@ -345,7 +358,12 @@ body {
     transform: scale(.8);
 }
 
-
+@media (max-width: 400px) {
+    .socials-icons img {
+        width: 2.2em;
+        height: 2.2em;
+    }
+}
 /*--------Footer--------*/
 
 footer {
