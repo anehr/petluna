@@ -138,7 +138,6 @@ body {
     width: 60%;
     height: auto;
     vertical-align: top;
-    float:right;
     margin-right:5%;
 }
 
@@ -160,11 +159,11 @@ body {
     display: inline-block;
     width: 30%;
     line-height: 18px;
-    float: right;
 }
 
 .hero-image img {
     width: 75%;
+    border-radius: 10px;
 }
 
 .btn-contact {
@@ -198,6 +197,12 @@ body {
         position: relative;
         top: 230px;
     }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        width: max-content;
+        margin-left: 10px;
+    }
    
     .hero-image {
         display: block;
@@ -211,6 +216,10 @@ body {
         position: relative;
         left: -200px;
         top: 30px;
+    }
+
+    .hero p {
+        font-size: .75rem;
     }
    
 }
@@ -245,9 +254,15 @@ body {
 }
 
 @media (max-width: 400px) {
-    .gallery {
-    position: relative;
-    top: 220px;
+    .gallery-images {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        position: relative;
+        left: -70px;
+    }
+
+    .gallery-images img {
+        max-width: max-content;
     }
 }
 
@@ -281,6 +296,18 @@ body {
     z-index: 2;
 }
 
+@media (max-width: 400px) {
+    .feedback-images {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        position: relative;
+        left: -50px;
+    }
+
+    .feedback-images img {
+        max-width: max-content;
+    }
+}
 /*-------Socials-------*/
 
 .socials-icons {
@@ -312,6 +339,7 @@ body {
 .socials-icons img:hover {
     transform: scale(.8);
 }
+
 
 /*--------Footer--------*/
 
@@ -368,8 +396,3 @@ footer {
     height: 280px;
  }
 
- @media (max-width:500px) {
-    .footer {
-        margin-top: 30px;
-    }
-    }
