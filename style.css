@@ -91,7 +91,7 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .brand-name {
         display: none;
     }
@@ -193,7 +193,7 @@ body {
 }
 
 
-@media (max-width: 400px) {
+@media only screen and (max-device-width: 480px) {
     .hero {
         display: inline-block;
         width: 60%;
@@ -201,12 +201,13 @@ body {
         vertical-align: top;
         position: relative;
         top: 230px;
+        left: 10px;
     }
 
     .hero h1 {
         font-size: 1.6rem;
         width: max-content;
-        margin-left: 10px;
+        margin-left: 24px;
     }
    
     .hero-image {
@@ -219,7 +220,7 @@ body {
         width: 300px;
         height: auto;
         position: relative;
-        left: -200px;
+        left: -213px;
         top: 30px;
     }
 
@@ -241,7 +242,6 @@ body {
     }
    
 }
-
 /*-------Gallery-------*/
 
 .gallery h2 {
@@ -271,7 +271,7 @@ body {
     z-index: 2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     .gallery-images {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
